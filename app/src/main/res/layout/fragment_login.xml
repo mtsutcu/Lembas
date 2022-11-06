@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="loginFragment"
+            type="com.talip.lembas.ui.fragment.LoginFragment" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        android:fitsSystemWindows="true"
+
+        tools:context=".ui.fragment.LoginFragment">
+
+        <TextView
+            android:id="@+id/textViewYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:rotation="0"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:text="Lembas"
+            android:textColor="@color/myYellow"
+            android:textSize="45sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="1dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:rotation="0"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:text="Lembas"
+            android:textColor="@color/myGreen"
+            android:textSize="45sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextLoginEmail"
+            android:layout_width="278dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_selector"
+            android:drawableLeft="@drawable/icon_mail"
+            android:drawableTint="@color/myYellow"
+            android:ems="10"
+            android:hint="@string/editTextHintEmail"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/hintGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/editTextLoginPassword"
+            android:layout_width="278dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_selector"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawableTint="@color/myYellow"
+            android:ems="10"
+            android:hint="@string/editTextHintPassword"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintGrey"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLoginEmail"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLoginEmail" />
+
+        <TextView
+            android:id="@+id/textViewForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClickListener="@{()-> loginFragment.toReset(textViewForgetPassword)}"
+            android:text="@string/forgotPasswordButton"
+            android:textColor="@color/myYellow"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClickListener="@{()-> loginFragment.toSignUp(textViewSignUp)}"
+            android:text="@string/signUp"
+
+            android:textColor="@color/myYellow"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/custom_button"
+            android:onClickListener="@{()->loginFragment.login(editTextLoginEmail.getText().toString(), editTextLoginPassword.getText().toString())}"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextLoginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/textViewForgetPassword" />
+
+        <ProgressBar
+            android:id="@+id/loginProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="@color/myGreen"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewForgetPassword" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

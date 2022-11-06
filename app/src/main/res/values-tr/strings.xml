@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Lembas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editTextHintEmail">E-posta</string>
+    <string name="editTextHintPassword">Şifre</string>
+    <string name="editTextHintRePassword">Şifre tekrar</string>
+    <string name="editTextHintAddress">Adres</string>
+    <string name="welcome">Hoşgeldiniz</string>
+    <string name="forgotPasswordButton">Şifremi unuttum</string>
+    <string name="login">Giriş</string>
+    <string name="signUp">Kayıt ol</string>
+    <string name="forgotPassword">Şifrenizi mi unuttunuz?</string>
+    <string name="reset">Sıfırla</string>
+    <string name="campaigns">Kampanyalar</string>
+    <string name="restaurants">Restoranlar</string>
+    <string name="explore">Keşfet</string>
+    <string name="search">Ara</string>
+    <string name="bag">Sepet</string>
+    <string name="order">Sipariş</string>
+    <string name="settings">Ayarlar</string>
+    <string name="minute">dk</string>
+    <string name="minOrderPrice">min. sepet tutarı</string>
+    <string name="searchRes">Restoran ara…</string>
+    <string name="searchFood">Yemek ara</string>
+    <string name="myBag">Sepetim</string>
+    <string name="nothingToShow">Gösterilecek bir şey yok</string>
+    <string name="resMinPrice">Min Tutar</string>
+    <string name="deliveryTime">Teslimat</string>
+    <string name="addToBag">SEPETE EKLE</string>
+    <string name="orderButton">SİPARİŞ VER</string>
+    <string name="ok">TAMAM</string>
+    <string name="update">GÜNCELLE</string>
+    <string name="changePasswrod">Şifre Değiştir</string>
+    <string name="piece">Adet:</string>
+    <string name="changeAddress">Değiştir</string>
+    <string name="warning">Uyarı</string>
+    <string name="checkEmail">Lütfen e-posta veya şifrenizi kontrol ediniz</string>
+    <string name="verifyEmail">Lütfen hesabınızı doğrulayın</string>
+    <string name="sendVerifyEmail">Doğrulama bağlantısı gönderildi</string>
+    <string name="error">Hata</string>
+    <string name="resetLink">Şifre sıfırlama bağlantısı gönderildi </string>
+    <string name="resetLink2">Şifre sıfırlama bağlantısı hesabınıza gönderilecekl</string>
+    <string name="resetLinkError">Şifre sıfırlama bağlantısı gönderilemedi</string>
+    <string name="orderTaken">Siparişiniz alındı</string>
+    <string name="orderPrep">Siparişiniz hazırlanıyor</string>
+    <string name="orderWay">Siparişiniz yolda</string>
+    <string name="orderDelivered">Siparişiniz teslim edildi</string>
+    <string name="wantExit">Çıkış yapmak istiyor musunuz?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="cantOrder">Farklı restoranlardan sipariş veremezsiniz</string>
+    <string name="foodDel">Yemek silinecek. Emin misiniz?</string>
+    <string name="addMore">Lütfen daha fazla adet seçiniz</string>
+
+
+
+
+
+</resources>

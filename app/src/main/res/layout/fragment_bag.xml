@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="bagFragment"
+            type="com.talip.lembas.ui.fragment.BagFragment" />
+
+        <variable
+            name="bagAdapter"
+            type="com.talip.lembas.ui.adapter.BagAdapter" />
+
+        <variable
+            name="totalPrice"
+            type="String" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+
+        tools:context=".ui.fragment.BagFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/materialToolbar"
+
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/curve_toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+
+            <TextView
+                android:id="@+id/textViewToolbar"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/berkshire_swash"
+                android:text="@string/myBag"
+                android:textColor="@color/myYellow"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="11dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bagRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adapter="@{bagAdapter}"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/bagBottomToolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialToolbar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="@string/nothingToShow"
+            android:textColor="#88F58238"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/bagBottomToolbar"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/orderButton"
+            android:layout_width="173dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/myYellow"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:onClickListener="@{()-> bagFragment.createOrder(orderButton)}"
+            android:text="@string/orderButton"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/bagBottomToolbar"
+            app:layout_constraintEnd_toEndOf="@+id/bagBottomToolbar"
+            app:layout_constraintTop_toTopOf="@+id/bagBottomToolbar" />
+
+        <TextView
+            android:id="@+id/bagTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="15dp"
+            android:text="@{totalPrice+` ₺`}"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bagBottomToolbar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

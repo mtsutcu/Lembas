@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Lembas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editTextHintEmail">Email</string>
+    <string name="editTextHintPassword">Password</string>
+    <string name="editTextHintRePassword">Re-Password</string>
+    <string name="editTextHintAddress">Address</string>
+    <string name="welcome">Welcome</string>
+    <string name="forgotPasswordButton">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="forgotPassword">Forgot Your Password?</string>
+    <string name="reset">Reset</string>
+    <string name="campaigns">Campaigns</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="explore">Explore</string>
+    <string name="search">Search</string>
+    <string name="bag">Bag</string>
+    <string name="order">Order</string>
+    <string name="settings">Settings</string>
+    <string name="minute">min</string>
+    <string name="minOrderPrice">min. order price</string>
+    <string name="searchRes">Search restaurant…</string>
+    <string name="searchFood">Search food</string>
+    <string name="myBag">My Bag</string>
+    <string name="nothingToShow">Nothing to Show</string>
+    <string name="resMinPrice">Min Price</string>
+    <string name="deliveryTime">Delivery</string>
+    <string name="addToBag">ADD TO BAG</string>
+    <string name="orderButton">ORDER</string>
+    <string name="ok">OK</string>
+     <string name="update">update</string>
+    <string name="changePasswrod">Change Password</string>
+    <string name="piece">Piece:</string>
+    <string name="changeAddress">Change</string>
+    <string name="warning">Warning</string>
+    <string name="checkEmail">Please check your email or password</string>
+    <string name="verifyEmail">Please verify your email</string>
+    <string name="sendVerifyEmail">The verification email has been sent to your email</string>
+    <string name="error">Error</string>
+    <string name="resetLink">The reset link has been sent to your email</string>
+    <string name="resetLink2">The reset link will sent to your email</string>
+    <string name="resetLinkError">The reset link has not been sent to your email</string>
+    <string name="orderTaken">Your order has been taken</string>
+    <string name="orderPrep">Your order is preparing</string>
+    <string name="orderWay">Your order is on its way</string>
+    <string name="orderDelivered">Your order was delivered</string>
+    <string name="wantExit">Do youn want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cantOrder">You can not order from different restaurants</string>
+    <string name="foodDel">The food will delete. Are you sure?</string>
+    <string name="addMore">Please add more</string>
+
+
+</resources>

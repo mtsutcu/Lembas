@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1001444540761",
+    "firebase_url": "https://lembas-cbae4-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "lembas-cbae4",
+    "storage_bucket": "lembas-cbae4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001444540761:android:ad82f84e697697c2258c48",
+        "android_client_info": {
+          "package_name": "com.talip.lembas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001444540761-biovtk14tevq4n1ls87sra55q2h991k4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIgI26bHuFwPORdT6ZzPOMSd5JMzSY07M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001444540761-biovtk14tevq4n1ls87sra55q2h991k4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

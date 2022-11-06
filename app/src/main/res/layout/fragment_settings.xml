@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="address"
+            type="String" />
+
+        <variable
+            name="settingsFragment"
+            type="com.talip.lembas.ui.fragment.SettingsFragment" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+
+        tools:context=".ui.fragment.SettingsFragment">
+
+        <EditText
+            android:id="@+id/editTextSetAddress"
+            android:layout_width="match_parent"
+
+            android:layout_height="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/edit_text_selector"
+
+            android:ems="10"
+            android:enabled="false"
+
+            android:fontFamily="sans-serif"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:minLines="1"
+            android:scrollbars="vertical"
+            android:text="@{address}"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/updateAddressBut"
+            android:layout_width="135dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/custom_button"
+            android:clickable="true"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:onClickListener="@{()->settingsFragment.updateAdress(editTextSetAddress.getText().toString())}"
+            android:text="@string/update"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSetAddress" />
+
+        <TextView
+            android:id="@+id/changeAddressBut"
+            android:layout_width="135dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/custom_button"
+            android:clickable="true"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:onClickListener="@{()->settingsFragment.updateAddressEnable()}"
+            android:text="@string/changeAddress"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSetAddress" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="@string/settings"
+            android:textColor="@color/myGreen"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:onClickListener="@{()->settingsFragment.changePassword(textView17)}"
+            android:text="@string/changePasswrod"
+            android:textAlignment="center"
+            android:textColor="@color/myGreen"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/editTextSetAddress"
+            app:layout_constraintStart_toStartOf="@+id/editTextSetAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSetAddress" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="150dp"
+            android:onClickListener="@{()-> settingsFragment.exit()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:srcCompat="@drawable/icon_exit" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Address"
+            android:textColor="@color/myYellow"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextSetAddress"
+            app:layout_constraintEnd_toEndOf="@+id/editTextSetAddress"
+            app:layout_constraintStart_toStartOf="@+id/editTextSetAddress" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

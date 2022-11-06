@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/explore"
+        android:icon="@drawable/icon_explore"
+        android:title="@string/explore" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/icon_search"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/bag"
+        android:icon="@drawable/icon_bag"
+        android:title="@string/bag" />
+    <item
+        android:id="@+id/order"
+        android:icon="@drawable/icon_delivery"
+        android:title="@string/order" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/icon_settings"
+        android:title="@string/settings" />
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popMaxPrice"
+        android:title="₺ max" />
+    <item
+        android:id="@+id/popMinPrice"
+        android:title="₺ min" />
+    <item
+        android:id="@+id/popAtoZ"
+        android:title="A-Z" />
+    <item
+        android:id="@+id/popZtoA"
+        android:title="Z-A" />
+    <item
+        android:id="@+id/popClear"
+        android:title="Clear All" />
+</menu>
